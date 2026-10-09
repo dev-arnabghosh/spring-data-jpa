@@ -1,0 +1,24 @@
+spring:
+    application:
+        name: 02-SpringBootDataJpaCrudBasicsEx
+    datasource:
+        #driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/bootdemo
+        username: root
+        password: Abc1234
+    jpa:
+        show-sql: true
+        #database-platform: org.hibernate.dialect.MySQLDialect
+        hibernate:
+            ddl-auto: create
+---
+# Profile for Oracle
+spring: 
+    config:
+        activate:
+            on-profile: oracle
+    datasource:
+            #driver-class-name: com.mysql.cj.jdbc.Driver
+            url: jdbc:oracle:thin:@localhost:1521:FREE
+            username: system
+            password: Pwd456       

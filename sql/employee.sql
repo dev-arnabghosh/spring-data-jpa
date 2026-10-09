@@ -47,3 +47,14 @@ desc employee;
 select * from employee;
 
 
+select * from employee;
+
+select * from employee limit 0,4;
+
+
+
+
+
+
+
+
