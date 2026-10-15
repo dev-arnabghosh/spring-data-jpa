@@ -1,0 +1,25 @@
+spring:
+    application:
+        name: 05-SpringBootDataJpaFindByEx
+    datasource:
+        url: jdbc:mysql://localhost:3306/bootdemo
+        username: root
+        password: Abc1234
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create
+---
+spring:
+    config:
+        activate:
+            on-profile: oracle
+    datasource:
+        driver-class-name: oracle.jdbc.OracleDriver
+        url: jdbc:oracle:thin:@localhost:1521/FREE
+        username: system
+        password: Pwd456
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create
