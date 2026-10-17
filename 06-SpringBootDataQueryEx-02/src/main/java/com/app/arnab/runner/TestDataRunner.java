@@ -31,11 +31,11 @@ public class TestDataRunner implements CommandLineRunner {
 				new Book(109, "NEXT", null, 600.00, "Frontend")//
 		));
 
-		// repo.getBooksByAuthor("Shiva").forEach(System.out::println);
-		
-		 repo.getBooksByAuthorOrCost("k%", 500.00).forEach(System.out::println);
-		
-		//repo.getBookIds(Arrays.asList(103, 105, 108)).forEach(System.out::println);
+		repo.getBooksByAuthor("Shiva").forEach(System.out::println);
+
+		repo.getBooksByAuthorOrCost("k%", 500.00).forEach(System.out::println);
+
+		repo.getBookIds(Arrays.asList(103, 105, 108)).forEach(System.out::println);
 
 	}
 
