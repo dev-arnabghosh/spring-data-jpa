@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: 08-SpringBootDataJpaManyToOneEx
+    datasource:
+        url: jdbc:mysql://localhost:3306/bootdemo
+        username: root
+        password: Abc1234
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create
